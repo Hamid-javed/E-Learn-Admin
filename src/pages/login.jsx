@@ -29,13 +29,7 @@ function login() {
       navigate("/admin/users")
       const resJson = await response.json()
       console.log(resJson)
-    }
-    // const response2 = await patchData(`${baseURL}/admin/users`, "GET", body )
-    // if(response.ok) {
-    //   const resJson = await response.json()
-    //   console.log(resJson)
-    // }
-    
+    }    
   };
   return (
     <div className="w-screen h-screen flex flex-col justify-center items-center bg-[#f2f6f8] sm:px-0 px-2">
@@ -57,7 +51,7 @@ function login() {
               name="password"
               placeholder="password"
               className="py-2 px-2 w-full border border-gray-500 rounded-sm"
-              type="text"
+              type="password"
             />
             <button
               type="submit"
