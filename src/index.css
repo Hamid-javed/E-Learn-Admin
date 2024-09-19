@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.toast {
+    animation-name: slideinleft;
+    animation-duration: 0.25s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    }
+    
+    @keyframes slideinleft {
+      from{transform: translateX(100%);}
+      to{transform: translateX(0%);}  
+    }
+
+    .shadow-4side {
+      /* box-shadow: 0px 0px 30px 5px rgb(230, 230, 230);
+       */
+       box-shadow: 8.0px 16.0px 16.0px hsla(0, 0%, 50%, 0.25);
+
+  }
